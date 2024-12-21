@@ -1,0 +1,109 @@
+a:hover {
+    color: orange;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+ body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    background-color: rgb(36, 36, 36);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #989898;
+    background-blend-mode: multiply, multiply;
+    ;
+}
+
+/* Navbar */
+nav {
+    background-image: linear-gradient(to right, black, white);
+    /* Green color */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.hover {
+    transition: 0.5s;
+}
+
+.hover:hover {
+    transform: scale(1.1);
+}
+
+.h {
+    color: white;
+}
+
+.p3 {
+    color: white;
+}
+
+
+.p {
+    color: white;
+}
+
+.p2 {
+    color: white;
+}
+
+
+
+@media(max-width:750px) {
+    .parent {
+        grid-template-columns: auto;
+
+    }
+
+    .parent img {
+        width: 200px;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 0.2em;
+    }
+
+    .hero p {
+        font-size: 0.2rem;
+    }
+
+    /* Adjusting the Navbar Layout */
+    .navbar-nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .img-fluid {
+        width: 100%;
+    }
+}
+
+/* Media Queries for Larger Screens (Desktop and above) */
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 1em;
+    }
+
+    .hero p {
+        font-size: 0em;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: flex-start;
+    }
+} 
